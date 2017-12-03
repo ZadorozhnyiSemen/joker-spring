@@ -11,4 +11,5 @@
     </bean>
     <bean class="com.epam.spring.postprocessor.InjectRandomIntAnnotationBeanPostProcessor"/>
     <bean class="com.epam.spring.postprocessor.ProfilingHandlerBeanPostProcessor"/>
+    <bean class="com.epam.spring.listener.PostProxyInvokerContextListener"/>
 </beans>
