@@ -10,4 +10,5 @@
         <property name="message" value="I'll be back"/>
     </bean>
     <bean class="com.epam.spring.postprocessor.InjectRandomIntAnnotationBeanPostProcessor"/>
+    <bean class="com.epam.spring.postprocessor.ProfilingHandlerBeanPostProcessor"/>
 </beans>
