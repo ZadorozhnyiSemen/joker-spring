@@ -1,4 +1,4 @@
-package com.epam.spring;
+package com.epam.spring.profile;
 
 public class ProfilingController implements ProfilingControllerMBean {
     private boolean enabled = true;

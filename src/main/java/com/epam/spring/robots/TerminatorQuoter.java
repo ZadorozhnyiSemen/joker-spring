@@ -1,5 +1,6 @@
-package com.epam.spring;
+package com.epam.spring.robots;
 
+import com.epam.spring.annotations.DeprecatedClass;
 import com.epam.spring.annotations.InjectRandomInt;
 import com.epam.spring.annotations.PostProxy;
 import com.epam.spring.annotations.Profiling;
@@ -7,6 +8,7 @@ import com.epam.spring.annotations.Profiling;
 import javax.annotation.PostConstruct;
 
 @Profiling
+@DeprecatedClass(newImpl = T1000.class)
 public class TerminatorQuoter implements Quoter {
 
     @InjectRandomInt(min = 2, max = 7)

@@ -6,10 +6,11 @@
 	   					   http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:annotation-config/>
-    <bean class="com.epam.spring.TerminatorQuoter" id="terminatorQuoter">
+    <bean class="com.epam.spring.robots.TerminatorQuoter" id="terminatorQuoter">
         <property name="message" value="I'll be back"/>
     </bean>
     <bean class="com.epam.spring.postprocessor.InjectRandomIntAnnotationBeanPostProcessor"/>
     <bean class="com.epam.spring.postprocessor.ProfilingHandlerBeanPostProcessor"/>
     <bean class="com.epam.spring.listener.PostProxyInvokerContextListener"/>
+    <bean class="com.epam.spring.postprocessor.DeprecatedHandlerBeanFactoryPostProcessor"/>
 </beans>
