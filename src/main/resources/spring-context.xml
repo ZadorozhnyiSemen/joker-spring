@@ -7,4 +7,5 @@
     <bean class="com.epam.spring.TerminatorQuoter" id="terminatorQuoter">
         <property name="message" value="I'll be back"/>
     </bean>
+    <bean class="com.epam.spring.postprocessor.InjectRandomIntAnnotationBeanPostProcessor"/>
 </beans>
