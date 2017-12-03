@@ -1,9 +1,11 @@
 package com.epam.spring;
 
 import com.epam.spring.annotations.InjectRandomInt;
+import com.epam.spring.annotations.Profiling;
 
 import javax.annotation.PostConstruct;
 
+@Profiling
 public class TerminatorQuoter implements Quoter {
 
     @InjectRandomInt(min = 2, max = 7)
